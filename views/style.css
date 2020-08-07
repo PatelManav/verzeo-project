@@ -1,0 +1,379 @@
+		body, html {
+  			height: 100%;
+		}
+		
+		body{
+			margin:0;}
+		
+		html{
+			scroll-behavior: smooth;}
+		
+/* --------------------- Navigation Bar -----------------------------*/		
+		
+		.navbar {
+			/*overflow: hidden;*/
+			position: fixed;
+			top: 0;
+			background-color: rgba(0,0,0, 0.2);
+			backdrop-filter: blur(1px);
+			font-family: 'Chivo', sans-serif;
+			width: 100%;
+			z-index: 100;}
+
+		.navbar a {
+			float: right;
+		  	display: block; 
+		  	text-align: center;
+			margin: auto;
+			padding: 2% 1.7%;
+		  	text-decoration: none;
+			/*font-size: 1.25vw;*/
+			font-size: 20px;
+			color: white;}
+		
+		.navbar h1 {
+			border: medium;
+			display: block;
+			float: left;
+		  	color: white;
+		  	text-align: center;
+			/*font-size: 2.2vw;*/
+			padding: 0% 2.5%;}
+
+		.navbar a:hover, .dropdown:hover {
+			/*text-decoration: underline;
+			text-decoration-color: black;
+			background-color: #1E619E;*/
+			background-color: rgba(0,0,0, 0.4);
+			border:5px solid #FFFFFF;
+			transition: 0.5s;
+		}
+
+		.navbar .scrolled{
+			background-color: rgba(0,0,0, 0.4);
+		}
+	
+		.dropdown {
+  			float: right;
+			text-decoration: none;
+  			padding: 1.8% 1.7% 0%;
+			overflow: hidden;
+		}
+
+		.dropdown .dropbtn {
+			font-size: 20px;  
+			border: none;
+			outline: none;
+			color: white;
+			position: relative;
+			float: left;
+			margin: auto;
+			background-color: inherit;
+			font-family: inherit;
+		}	
+
+		.dropdown-content {
+			display: none;
+			opacity: 0;
+			position: relative;	
+			margin: 40px -25px 0px;
+			background-color: transparent;
+			min-width: 160px;
+			/*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);*/
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			float: none;
+			color: white;
+			text-decoration: none;
+			padding: 12px 16px;
+			display: block;
+			text-align: left;
+		}
+
+		.dropdown-content a:hover {
+			/*background-color: #ddd;*/
+			background-color: rgba(0,0,0, 0.4);
+			opacity: 1;
+			transition: 0.5s;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+			opacity: 1;
+			transition: 0.5s;
+		}
+		
+/*----------------------- Home Page (Hero Image) ----------------------*/		
+
+		.hero {
+			background-image: url('Assets/Hero_Image.jpg');
+			height: 100%; 
+		 	background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.centered {
+			position: absolute;
+			background-color: rgba(0,0,0, 0.4);
+			padding: 20px;
+			top: 50%;
+			font-family: 'Playfair Display', serif;
+			left: 50%;
+			width: auto;
+			transform: translate(-50%, -50%);
+		}
+
+		.scroll_down {
+			position: absolute;
+			background-color: transparent;
+			padding: 20px;
+			text-decoration: none;
+			top: 95%;
+			font-family: 'Chivo', sans-serif;
+			left: 50%;
+			width: auto;
+			transform: translate(-50%, -50%);
+		}
+
+/*------------------------- About ----------------------------*/		
+		
+		.main {
+			margin: 0% 0%;
+			padding: 6% 0%;
+			/*background-color: #e1b382;*/
+			background-color: rgb(225, 179, 130,0.7);
+		}		
+		
+		.main p{
+			font-size: 20px;
+			margin: auto;
+			width: 70%;
+		}
+
+		.flex_container
+		{
+			display: flex;
+			width: 70%;
+			margin: auto;
+			padding-top: 2%;
+			align-items: center;
+		}
+		
+/*------------------------- Portfolio ----------------------------*/		
+
+		.hero_portfolio {
+			background-image: url('Assets/Portfolio.jpg');
+			height: 100%; 
+		 	background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.centered_portfolio {
+			position: relative;
+			text-align: center;
+			background-color: rgba(0,0,0, 0.4);
+			padding: 20px 10%;
+			font-family: 'Playfair Display', serif;
+			/*width: 40%;*/
+			display: inline-block;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.mySlides {
+			display: none}
+
+		img {
+			vertical-align: middle;}
+
+		/* Slideshow container */
+		.slideshow-container {
+		  /*max-width: 1000px;*/
+			max-width: 80%;
+		  position: relative;
+		  margin: auto;
+		}
+
+		/* Next & previous buttons */
+		.prev, .next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -22px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 18px;
+		  transition: 0.6s ease;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover, .next:hover {
+		  background-color: rgba(0,0,0,0.8);
+		}
+
+		/* Caption text */
+		.text {
+		  color: #f2f2f2;
+		  font-size: 15px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  bottom: 8px;
+		  width: 100%;
+		  text-align: center;
+		}
+
+		/* Number text (1/3 etc) */
+		.numbertext {
+		  color: #f2f2f2;
+		  font-size: 12px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  top: 0;
+		}
+
+		/* The dots/bullets/indicators */
+		.dot {
+		  cursor: pointer;
+		  height: 15px;
+		  width: 15px;
+		  margin: 5px 2px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+
+		.active, .dot:hover {
+		  background-color: #717171;
+		}
+
+		/* Fading animation */
+		.fade {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 5s;
+		  animation-name: fade;
+		  animation-duration: 5s;
+		}
+
+		@-webkit-keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+
+/*------------------------- Contact Us ----------------------------*/		
+
+		.hero_contact_us {
+			background-image: url('Assets/Contact_Us.jpg');
+			height: 100%; 
+		 	background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.centered_contact_us {
+			position: relative;
+			text-align: center;
+			background-color: rgba(0,0,0, 0.4);
+			padding: 20px 10%;
+			font-family: 'Playfair Display', serif;
+			/*width: 40%;*/
+			display: inline-block;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.main label{
+			display: block;
+			text-align: center;
+			margin: auto; 
+			font-size: 20px;
+			font-family: 'Chivo', sans-serif;
+		}
+
+		.main input{
+			display: block;
+			margin: auto; 
+			height: 20px;
+			font-family: 'Chivo', sans-serif;
+		}
+
+		.main textarea{
+			width: 30%;
+			display: block;
+			margin: auto;
+		}
+
+		::placeholder {
+			color: black;
+			font-size: 20px;
+			font-family: 'Judson', serif;
+		}
+
+
+/*------------------------- Footer ----------------------------*/		
+
+		.footer {
+			margin: 0% 0%;
+			padding: 2% 2%;
+			/*background-color: #e1b382;*/
+			background-color: darkcyan;
+			color: white;
+		}
+
+		.footer ul{
+			display: inline-block;
+			float: right;
+		}
+		
+		.footer a {
+			float: right;
+		  	display: block; 
+		  	text-align: center;
+			margin: auto;
+			padding: 2% 1.7%;
+		  	text-decoration: none;
+			/*font-size: 1.25vw;*/
+			font-size: 20px;
+			color: white;}
+		
+		.navbar h1 {
+			border: medium;	
+			display: block;
+			float: left;
+		  	color: white;
+		  	text-align: center;
+			/*font-size: 2.2vw;*/
+			padding: 0% 2.5%;}
+
+		.flex_container_footer
+		{
+			display: flex;
+			width: 100%;
+			margin: auto;
+			align-items: center;
+		}
