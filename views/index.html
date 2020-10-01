@@ -1,125 +1,260 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Interior Design</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Judson:400,700" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Interior Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black|Judson:400,700"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--------------- Navigation Bar ------------------------->
 
-	<!--------------- Navigation Bar ------------------------->
-	
-	<div class="navbar" id="navigation">
-		<h1 style="font-family: 'Playfair Display';">Bougainvillea</h1>
-		<a href="#contact"><strong>Contact Us</strong></a>
-  	  	<!--<a href="#products" class="drop"><strong>Products</strong></a>-->
-		<div class="dropdown">
-			<button class="dropbtn" style="background-color:transparent !important;"><a href="#products" style=" font-family: 'Chivo', sans-serif; font-size: 20px; color: white;" onMouseOver="this.style.border='0px'"><strong>Products</strong></a></button>
-			<div class="dropdown-content">
-				<a href="#chairs"><strong>Chairs</strong></a>
-				<a href="#coffee"><strong>Coffee Table</strong></a>
-				<a href="#bookshelves"><strong>Bookshelves</strong></a>
-			</div>
-	  	</div>
-		<a href="#portfolio"><strong>Portfolio</strong></a>
-		<a href="#about"><strong>About</strong></a>
-		<a href="#home"><strong>Home</strong></a>
-	</div>
-	
-	<!--------------- Main Body ------------------------->
+    <div class="navbar" id="navigation">
+      <h1 style="font-family: 'Playfair Display'">Bougainvillea</h1>
+      <a href="#contact"><strong>Contact Us</strong></a>
+      <!--<a href="#products" class="drop"><strong>Products</strong></a>-->
+      <div class="dropdown">
+        <button
+          class="dropbtn"
+          style="background-color: transparent !important"
+        >
+          <a
+            href="#products"
+            style="
+              font-family: 'Chivo', sans-serif;
+              font-size: 20px;
+              color: white;
+            "
+            onMouseOver="this.style.border='0px'"
+            ><strong>Products</strong></a
+          >
+        </button>
+        <div class="dropdown-content">
+          <a href="#chairs"><strong>Chairs</strong></a>
+          <a href="#coffee"><strong>Coffee Table</strong></a>
+          <a href="#bookshelves"><strong>Bookshelves</strong></a>
+        </div>
+      </div>
+      <a href="#portfolio"><strong>Portfolio</strong></a>
+      <a href="#about"><strong>About</strong></a>
+      <a href="#home"><strong>Home</strong></a>
+    </div>
 
-		<!--------------- Home Page (Hero Image) ------------------------->
-		
-		<div class="hero" id="home">
-			<div class="centered" style="font-size: 100px ; border: 10px solid white ; color: white ; font-family: 'Playfair Display', serif !important;">Bougainvillea</div>
-			<!--<div class="scroll_down"><a href="#about" style="font-family: 'Chivo', sans-serif; color: white; font-size: 20px; text-decoration: none;"><strong>SCROLL DOWN</strong></a></div>-->
-			<div class="scroll_down"><a href="#about" style="font-family: 'Chivo', sans-serif; color: white; font-size: 20px; text-decoration: none;"><img src="Assets/scroll_down.png" alt="SCROLL DOWN"></a></div>
-		</div>	
-		
-		<!--------------- About ------------------------->
-	
-		<div class="main" id="about">
-			<h1 align="center" style="font-family: 'Chivo', sans-serif;">About Bougainvillea Interiors</h1>
-			<h3 align="center" style="font-family: 'Chivo', sans-serif;">Design Statement - "When in doubt, be bold"</h3>
-			<p align="center" style=" font-family: 'Judson', serif;">We at Bougainvillea Interiors bring real estate and storytelling together. As a team of architects and technologists, we are uniquely qualified to translate your property vision into visuals that will transport homebuyers and investors alike.</p>
-			<div class="flex_container">
-				<div>
-					<!--<img src="Assets/About.jpg" alt="About Image" height="40%" width="40%" align="left" style="padding: 2% 2% 2% 15.8%; display: inline-block;">-->
-					<img src="/Assets/About.jpg" alt="About Image" max-height="auto" width="444px" style="border-radius: 5%;">
-				</div>
-				<div>
-					<p style ="font-family: 'Judson', serif; width: 90%;" align="justify">We create designs in a collaborative environment enabling us to deliver the client’s ultimate vision. Our designs are current, yet still possess a timeless style generating broad market appeal. Our reputation for outstanding service and our innovative design style creates an extremely successful partnership with our clients.<br><br>
-					It is our passion to constantly pursue fresh inspiration. Our designers continually search for the most compelling design styles and highest quality of materials available. Hours of extensive market research allow us to create each design specific to your target market. We take pride in our work ethic, our eye for innovative designs, and our commitment to our clients.</p>
-				</div>
-			</div>
-		</div>
-	
-		<!--------------- Portfolio ------------------------->
-		
-		<div class="hero_portfolio" id="portfolio">
-			<div class="centered_portfolio" style="font-size: 100px ; border: 10px solid white ; color: white ; ">Portfolio</div>
-		</div>
-		<div class="main">
-			<h1 align="center" style="font-family: 'Chivo', sans-serif;">Portfolio of Bougainvillea Interiors</h1>
-			<p align="center" style=" font-family: 'Judson', serif;"><br>At Bougainvillea Interiors we aim to please our clients, taking care of every last detail. We believe that our clients should have full control over the design of their home which is which is refleted quite strongly in our portfolio. <br><br><br></p>
-			<div class="slideshow-container">
-				<div class="mySlides fade">
-					<img src="/Assets/Portfolio_1.jpg" style="width:100%" alt="Portfolio Image 1">
-					<!--<div class="text">Caption Text</div>-->
-				</div>
-				<div class="mySlides fade">
-					<img src="/Assets/Portfolio_2.jpg" style="width:100%" alt="Portfolio Image 2">
-					<!--<div class="text">Caption Text</div>-->
-				</div>
-				<div class="mySlides fade">
-					<img src="/Assets/Portfolio_3.jpg" style="width:100%" alt="Portfolio Image 3">
-					<!--<div class="text">Caption Text</div>-->
-				</div>
-				<div class="mySlides fade">
-					<img src="/Assets/Portfolio_4.jpg" style="width:100%" alt="Portfolio Image 4">
-					<!--<div class="text">Caption Text</div>-->
-				</div>
-				<div class="mySlides fade">
-					<img src="/Assets/Portfolio_5.jpg" style="width:100%" alt="Portfolio Image 5">
-					<!--<div class="text">Caption Text</div>-->
-				</div>
-				<div class="mySlides fade">
-					<img src="/Assets/Portfolio_6.jpg" style="width:100%" alt="Portfolio Image 6">
-					<!--<div class="text">Caption Text</div>-->
-				</div>
-				<div class="mySlides fade">
-					<img src="/Assets/Portfolio_7.jpg" style="width:100%" alt="Portfolio Image 7">
-					<!--<div class="text">Caption Text</div>-->
-				</div>
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
-			</div>
-			<div style="text-align:center">
-				<span class="dot" onclick="currentSlide(1)"></span> 
-				<span class="dot" onclick="currentSlide(2)"></span> 
-				<span class="dot" onclick="currentSlide(3)"></span> 
-				<span class="dot" onclick="currentSlide(4)"></span> 
-				<span class="dot" onclick="currentSlide(5)"></span> 
-				<span class="dot" onclick="currentSlide(6)"></span> 
-				<span class="dot" onclick="currentSlide(7)"></span> 
-			</div>
-		</div>
-	
-		<!--------------- Contact Us ------------------------->
-		<div class="hero_contact_us" id="contact">
-			<div class="centered_contact_us" style="font-size: 100px ; border: 10px solid white ; color: white ; ">Contact Us</div>
-		</div>
-		<div class="main">
-            <form>
-                <input type="text" id="subject" placeholder="Subject"> <br>
-                <input type="email" id="email" placeholder="Email"> <br>
-                <textarea name="text" id="text" cols="30" rows="10"></textarea>
-                <input type="submit" value="Submit">
-            </form>
-            
-			<!-- <h1 align="center" style="font-family: 'Chivo', sans-serif;">Contact Us</h1>
+    <!--------------- Main Body ------------------------->
+
+    <!--------------- Home Page (Hero Image) ------------------------->
+
+    <div class="hero" id="home">
+      <div
+        class="centered"
+        style="
+          font-size: 100px;
+          border: 10px solid white;
+          color: white;
+          font-family: 'Playfair Display', serif !important;
+        "
+      >
+        Bougainvillea
+      </div>
+      <!--<div class="scroll_down"><a href="#about" style="font-family: 'Chivo', sans-serif; color: white; font-size: 20px; text-decoration: none;"><strong>SCROLL DOWN</strong></a></div>-->
+      <div class="scroll_down">
+        <a
+          href="#about"
+          style="
+            font-family: 'Chivo', sans-serif;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+          "
+          ><img src="Assets/scroll_down.png" alt="SCROLL DOWN"
+        /></a>
+      </div>
+    </div>
+
+    <!--------------- About ------------------------->
+
+    <div class="main" id="about">
+      <h1 align="center" style="font-family: 'Chivo', sans-serif">
+        About Bougainvillea Interiors
+      </h1>
+      <h3 align="center" style="font-family: 'Chivo', sans-serif">
+        Design Statement - "When in doubt, be bold"
+      </h3>
+      <p align="center" style="font-family: 'Judson', serif">
+        We at Bougainvillea Interiors bring real estate and storytelling
+        together. As a team of architects and technologists, we are uniquely
+        qualified to translate your property vision into visuals that will
+        transport homebuyers and investors alike.
+      </p>
+      <div class="flex_container">
+        <div>
+          <!--<img src="Assets/About.jpg" alt="About Image" height="40%" width="40%" align="left" style="padding: 2% 2% 2% 15.8%; display: inline-block;">-->
+          <img
+            src="./Assets/About.jpg"
+            alt="About Image"
+            max-height="auto"
+            width="444px"
+            style="border-radius: 5%"
+          />
+        </div>
+        <div>
+          <p style="font-family: 'Judson', serif; width: 90%" align="justify">
+            We create designs in a collaborative environment enabling us to
+            deliver the client’s ultimate vision. Our designs are current, yet
+            still possess a timeless style generating broad market appeal. Our
+            reputation for outstanding service and our innovative design style
+            creates an extremely successful partnership with our clients.<br /><br />
+            It is our passion to constantly pursue fresh inspiration. Our
+            designers continually search for the most compelling design styles
+            and highest quality of materials available. Hours of extensive
+            market research allow us to create each design specific to your
+            target market. We take pride in our work ethic, our eye for
+            innovative designs, and our commitment to our clients.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--------------- Portfolio ------------------------->
+
+    <div class="hero_portfolio" id="portfolio">
+      <div
+        class="centered_portfolio"
+        style="font-size: 100px; border: 10px solid white; color: white"
+      >
+        Portfolio
+      </div>
+    </div>
+    <div class="main">
+      <h1 align="center" style="font-family: 'Chivo', sans-serif">
+        Portfolio of Bougainvillea Interiors
+      </h1>
+      <p align="center" style="font-family: 'Judson', serif">
+        <br />At Bougainvillea Interiors we aim to please our clients, taking
+        care of every last detail. We believe that our clients should have full
+        control over the design of their home which is which is refleted quite
+        strongly in our portfolio. <br /><br /><br />
+      </p>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img
+            src="./Assets/Portfolio.jpg"
+            style="width: 100%"
+            alt="Portfolio Image 1"
+          />
+          <!--<div class="text">Caption Text</div>-->
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="./Assets/Portfolio_2.jpg"
+            style="width: 100%"
+            alt="Portfolio Image 2"
+          />
+          <!--<div class="text">Caption Text</div>-->
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="./Assets/Portfolio_3.jpg"
+            style="width: 100%"
+            alt="Portfolio Image 3"
+          />
+          <!--<div class="text">Caption Text</div>-->
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="./Assets/Portfolio_4.jpg"
+            style="width: 100%"
+            alt="Portfolio Image 4"
+          />
+          <!--<div class="text">Caption Text</div>-->
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="./Assets/Portfolio_5.jpg"
+            style="width: 100%"
+            alt="Portfolio Image 5"
+          />
+          <!--<div class="text">Caption Text</div>-->
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="./Assets/Portfolio_6.jpg"
+            style="width: 100%"
+            alt="Portfolio Image 6"
+          />
+          <!--<div class="text">Caption Text</div>-->
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="./Assets/Portfolio_7.jpg"
+            style="width: 100%"
+            alt="Portfolio Image 7"
+          />
+          <!--<div class="text">Caption Text</div>-->
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+      </div>
+    </div>
+
+    <!--------------- Contact Us ------------------------->
+    <div class="hero_contact_us" id="contact">
+      <div
+        class="centered_contact_us"
+        style="font-size: 100px; border: 10px solid white; color: white"
+      >
+        Contact Us
+      </div>
+    </div>
+    <div class="main">
+      <section class="get-in-touch">
+        <h1 class="title">Get in touch</h1>
+        <form class="contact-form row">
+          <div class="form-field col x-50">
+            <input id="name" class="input-text js-input" type="text" required />
+            <label class="label" for="name">Name</label>
+          </div>
+          <div class="form-field col x-50">
+            <input
+              id="email"
+              class="input-text js-input"
+              type="email"
+              required
+            />
+            <label class="label" for="email">E-mail</label>
+          </div>
+          <div class="form-field col x-100">
+            <input
+              id="message"
+              class="input-text js-input"
+              type="text"
+              required
+            />
+            <label class="label" for="message">Message</label>
+          </div>
+          <div class="form-field col x-100 align-center">
+            <input class="submit-btn" type="submit" value="Submit" />
+          </div>
+        </form>
+      </section>
+
+      <!-- <h1 align="center" style="font-family: 'Chivo', sans-serif;">Contact Us</h1>
 			<form>
 				<p align="center" style=" font-family: 'Judson', serif;" for="name">Name</p><br>
 				<label align="center" style=" font-family: 'Judson', serif;" for="name">Name</label>
@@ -143,76 +278,76 @@
 				
 				<input type="submit" value="Submit" style=" font-family: 'Judson', serif; font-size: 20px; height: 100%;">
 			</form> -->
-		</div>
-	
-	
-	<!--------------- Footer ------------------------->
-	
-	<div class="footer">
-		<div class="flex_container_footer">
-			<div>
-				<h1 style="font-family: 'Playfair Display';">Bougainvillea</h1>
-			</div>
-			<div style=" padding: 0% 5%">
-				<a href="#home" style="float: right;">HOME</a>
-				<a href="#about" style="float: right">ABOUT</a>
-				<a href="#portfolio" style="float: right">PORTFOLIO</a>
-				<a href="#produts" style="float: right">PRODUCTS</a>
-				<a href="#contact" style="float: right">CONTACT&nbsp;US</a>
-			</div>
-			<!--<ul>
+    </div>
+
+    <!--------------- Footer ------------------------->
+
+    <div class="footer">
+      <div class="flex_container_footer">
+        <div>
+          <h1 style="font-family: 'Playfair Display'">Bougainvillea</h1>
+        </div>
+        <div style="padding: 0% 5%">
+          <a href="#home" style="float: right">HOME</a>
+          <a href="#about" style="float: right">ABOUT</a>
+          <a href="#portfolio" style="float: right">PORTFOLIO</a>
+          <a href="#produts" style="float: right">PRODUCTS</a>
+          <a href="#contact" style="float: right">CONTACT&nbsp;US</a>
+        </div>
+        <!--<ul>
 				<li>Home</li>
 				<li>About</li>
 				<li>Portfolio</li>
 				<li>Products</li>
 				<li>Contact Us</li>
 			</ul>-->
-		</div>
-	</div>
-	
-	<!--------------- Javascript for Navbar ------------------------->
-	
-	<script type="application/javascript">
-		var prevScrollpos = window.pageYOffset;
-		window.onscroll = function() {
-			var currentScrollPos = window.pageYOffset;
-	  		if (prevScrollpos > currentScrollPos) {
-				document.getElementById("navbar").style.top = "0";
-				document.getElementById("navbar").style.transitionDuration = "1s";} 	
-			else {
-				document.getElementById("navbar").style.top = "-90px";
-		  		document.getElementById("navbar").style.transitionDuration = "1s";}
-		  prevScrollpos = currentScrollPos;
-		}
-	</script>
-	
-	<script>
-	$(window).scroll(() => {
-	$('div').toggleClass('scrolled', $(this).scrollTop > 800)
-	 });
-	</script>
-	
-	<!------------------------Contact Us ------------------------------------------->
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <script>
-                $('form').on('submit', (event) => {
-                    event.preventDefault();
-                    const email = $('#email').val().trim();
-                    const subject = $('#subject').val().trim();
-                    const text = $('#text').val().trim();
-                    const data = {
-                        email,
-                        subject,
-                        text,
-                    };
-                    $.post('/email', data, () => {
-                        console.log('server received data');
-                    });
-                });
-            </script>
-	
-	<!--<script>
+      </div>
+    </div>
+
+    <!--------------- Javascript for Navbar ------------------------->
+
+    <script type="application/javascript">
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+          document.getElementById("navbar").style.transitionDuration = "1s";
+        } else {
+          document.getElementById("navbar").style.top = "-90px";
+          document.getElementById("navbar").style.transitionDuration = "1s";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+
+    <script>
+      $(window).scroll(() => {
+        $("div").toggleClass("scrolled", $(this).scrollTop > 800);
+      });
+    </script>
+
+    <!------------------------Contact Us ------------------------------------------->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $("form").on("submit", (event) => {
+        event.preventDefault();
+        const email = $("#email").val().trim();
+        const subject = $("#subject").val().trim();
+        const text = $("#text").val().trim();
+        const data = {
+          email,
+          subject,
+          text,
+        };
+        $.post("/email", data, () => {
+          console.log("server received data");
+        });
+      });
+    </script>
+
+    <!--<script>
 		var slideIndex = 1;
 		showSlides(slideIndex);
 
@@ -240,32 +375,31 @@
 		  dots[slideIndex-1].className += " active";
 		}
 	</script>-->
-	
-	<!------------------------Portfolio Slideshow ------------------------------------------->
-	
-	<script>
-		var slideIndex = 0;
-		showSlides();
 
-		function showSlides() {
-		  var i;
-		  var slides = document.getElementsByClassName("mySlides");
-		  var dots = document.getElementsByClassName("dot");
-		  for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none";  
-		  }
-		  slideIndex++;
-		  if (slideIndex > slides.length) {slideIndex = 1}    
-		  for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(" active", "");
-		  }
-		  slides[slideIndex-1].style.display = "block";  
-		  dots[slideIndex-1].className += " active";
-		  setTimeout(showSlides, 4000); // Change image every 4 seconds
-		}
-	</script>
+    <!------------------------Portfolio Slideshow ------------------------------------------->
 
-	
-	
-</body>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 4000); // Change image every 4 seconds
+      }
+    </script>
+  </body>
 </html>
