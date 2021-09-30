@@ -25,3 +25,5 @@ const sendMail = (email, subject, text, callback) => {
 };
 
 module.exports = sendMail;
+
+// adding the most critical feature, pls merge
